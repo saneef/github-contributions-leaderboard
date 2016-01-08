@@ -3,4 +3,6 @@ node_js:
   - "stable"
 
 install:
-  gem install scss_lint
+  - npm install -g gulp
+  - npm install
+  - gem install scss_lint

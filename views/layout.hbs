@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		{{{body}}}
+
+		<script src='/scripts/bundle.js'></script>
+		{{#if isDevEnv }}
+			<script type='text/javascript' id="__bs_script__">//<![CDATA[
+			    document.write("<script async src='http://HOST:9001/browser-sync/browser-sync-client.2.11.0.js'><\/script>".replace("HOST", location.hostname));
+			//]]></script>
+		{{/if}}
+	</body>
+</html>
