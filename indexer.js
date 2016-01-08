@@ -2,14 +2,22 @@ import cheerio from 'cheerio';
 import moment from 'moment';
 import fs from 'fs';
 import logger from 'debug';
+import path from 'path';
 import utils from './lib/utils';
 
 const debug = logger('github-contributions-leaderboard:indexer');
+
+var relativePath = '';
 
 let stats = {
 	updatedOn: undefined,
 	users: []
 };
+
+if (process.env.NODE_ENV &&
+		process.env.NODE_ENV === 'production') {
+	relativePath = '..';
+}
 
 function getStats(html) {
 	let $;
@@ -65,7 +73,7 @@ function writeStats(filename, stats) {
 }
 
 function prepareStats() {
-	const users = require('./users.json');
+	const users = require(path.join(__dirname, relativePath, 'users.json'));
 
 	const urls = users.map(function (user) {
 		return `https://github.com/${user}`;
@@ -74,7 +82,7 @@ function prepareStats() {
 	utils.batchGet(urls, getStats, function () {
 		stats.updatedOn = moment();
 
-		writeStats('./public/datasets/stats.json', stats);
+		writeStats(path.join(__dirname, relativePath, 'public/datasets/stats.json'), stats);
 
 		debug(`Updated stats of ${stats.users.length} users`);
 	});
