@@ -78,7 +78,6 @@ function prepareStats() {
 
 		debug(`Updated stats of ${stats.users.length} users`);
 	});
-
 }
 
 prepareStats();
