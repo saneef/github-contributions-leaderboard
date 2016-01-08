@@ -22,6 +22,7 @@ build/Release
 # Compiled files
 public/stylesheets/
 public/scripts/
+public/datasets/
 dist
 
 # Dependency directory

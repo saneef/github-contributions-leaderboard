@@ -71,8 +71,10 @@ gulp.task('client-scripts', function () {
 gulp.task('server-scripts', function () {
 	return gulp.src([
 		path.join('./app.js'),
+		path.join('./indexer.js'),
 		path.join('./bin/*'),
-		path.join('./routes/**/*.js')
+		path.join('./routes/**/*.js'),
+		path.join('./lib/**/*.js')
 	], {
 		base: path.join('.')
 	})
@@ -86,7 +88,8 @@ gulp.task('lint:js', function () {
 		path.join('./bin/www'),
 		path.join('./*.js'),
 		path.join('./client/**/*.js'),
-		path.join('./routes/**/*.js')
+		path.join('./routes/**/*.js'),
+		path.join('./lib/**/*.js')
 	])
 		.pipe($.plumber())
 		.pipe($.xo());
