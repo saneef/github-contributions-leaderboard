@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "test": "make test",
-    "start": "node ./bin/www"
+    "start": "node dist/bin/www.js",
+    "postinstall": "gulp build"
   },
   "engines": {
     "node": "4.2.2"
