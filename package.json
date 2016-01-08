@@ -2,7 +2,7 @@
   "name": "github-contributions-leaderboard",
   "version": "0.0.0",
   "scripts": {
-    "test": "echo 'No tests yet'",
+    "test": "make test",
     "start": "node ./bin/www"
   },
   "engines": {
