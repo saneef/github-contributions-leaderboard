@@ -1,7 +1,6 @@
 {
   "name": "github-contributions-leaderboard",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "test": "echo 'No tests yet'",
     "start": "node ./bin/www"
@@ -50,5 +49,20 @@
     "run-sequence": "^1.1.5",
     "serve-favicon": "~2.3.0",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razorfish-tech/github-contributions-leaderboard.git"
+  },
+  "keywords": [
+    "github",
+    "leaderboard",
+    "contributions"
+  ],
+  "author": "Saneef Ansari <hello@saneef.com> (https://saneef.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razorfish-tech/github-contributions-leaderboard/issues"
+  },
+  "homepage": "https://github.com/razorfish-tech/github-contributions-leaderboard#readme"
 }
