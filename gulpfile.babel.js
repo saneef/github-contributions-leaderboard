@@ -37,7 +37,6 @@ gulp.task('stylesheets', function () {
 	}
 
 	return gulp.src(path.join(paths.src.stylesheets, '**/*.scss'))
-		.pipe($.print())
 		.pipe($.plumber())
 		.pipe($.sourcemaps.init())
 		.pipe($.if(!isBuild, $.sourcemaps.init()))
