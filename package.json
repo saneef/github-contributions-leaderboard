@@ -8,7 +8,7 @@
     "refreshdata": "node dist/indexer.js"
   },
   "engines": {
-    "node": "4.2.4"
+    "node": ">=5.0.0"
   },
   "xo": {
     "envs": [
