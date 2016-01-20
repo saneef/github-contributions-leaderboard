@@ -10,7 +10,7 @@ Data fetching is based on [paulmillr](https://github.com/paulmillr)’s [git.io/
 
 ### Setting up environment
 
-- `$ npm install gulp babel-cli` to install gulp and babel binaries
+- `$ npm install gulp babel-cli -g` to install gulp and babel binaries
 
 - `$ npm install`
 - `$ gem install scss_lint` [optional]
