@@ -10,7 +10,6 @@ Data fetching is based on [paulmillr](https://github.com/paulmillr)’s [git.io/
 
 ### Setting up environment
 
-
 - `$ npm install gulp babel-cli` to install gulp and babel binaries
 
 - `$ npm install`
@@ -18,7 +17,8 @@ Data fetching is based on [paulmillr](https://github.com/paulmillr)’s [git.io/
 
 ### Developing
 
-- `$ gulp serve` will run local development server.
+#### App
+- `$ gulp serve` will run local development server; and you can access the app on http://localhost:3000.
 
 #### Refreshing the data
 
