@@ -1,5 +1,7 @@
 # github-contributions-leaderboard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/saneef/github-contributions-leaderboard.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/razorfish-tech/github-contributions-leaderboard.svg?branch=master)](https://travis-ci.org/razorfish-tech/github-contributions-leaderboard)
 
 ## Data
